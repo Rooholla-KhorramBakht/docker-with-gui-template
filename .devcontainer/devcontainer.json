@@ -1,0 +1,13 @@
+// https://containers.dev/implementors/json_reference/
+{
+  "name": "docker-with-gui-template", 
+  "dockerComposeFile": "docker-compose.yaml",
+  "workspaceFolder": "/home/docker-with-gui-template",
+  "service": "docker-with-gui-template",
+  "remoteUser": "root", 
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint"]
+    }
+  }
+}
