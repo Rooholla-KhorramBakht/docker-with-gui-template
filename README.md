@@ -47,8 +47,8 @@ xhost +local:root
 ```
 **Note** There are security implications to exposing X in this manner. For more detail read [here](http://wiki.ros.org/docker/Tutorials/GUI).
 
-## Running Using the VSCode
-A `devcontainer.json` file is provided in this repository. Simply open this repository using the vscode and run `Rebuild and Reopen in container` in the command terminal. Note that the Microsoft Dev Containers extension should be installed prior to this. 
+## Running Using the Visual Studio Code
+A `devcontainer.json` file is provided in this repository. Simply open this repository using the Visual Studio Code and run `Rebuild and Reopen in container` in the command terminal. Note that the `Microsoft Dev Containers` extension should be installed prior to this. 
 
 ## Sources
 [OpenGL and CUDA Applications in Docker](https://medium.com/@benjamin.botto/opengl-and-cuda-applications-in-docker-af0eece000f1) \
