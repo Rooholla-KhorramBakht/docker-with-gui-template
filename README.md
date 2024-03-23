@@ -16,7 +16,7 @@ ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES graphics,utility,compute
 ```
 
-During running the container, the `X`'s socket directory `/tmp/.X11-unix` should be mounted into the container and environmental variable `DISPLAY` must be set to the corresponding value in the host. Furthermore, in case an NVIDIA GPU is to be used, follow through [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) to install and configure the `nvidia-container-toolkit` and enable the corresponding `--gpus all` in `docker run` or `runtime: nvidia` in the docker-compose file. So, the corresponding docker compose file is:
+During running the container, the `X`'s socket directory `/tmp/.X11-unix` should be mounted and environmental variable `DISPLAY` must be set to the corresponding value in the host. Furthermore, in case an NVIDIA GPU is to be used, follow through [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) to install and configure the `nvidia-container-toolkit` and enable the corresponding `--gpus all` in `docker run` or `runtime: nvidia` in the docker-compose file. So, the corresponding docker compose file is:
 ```yaml
 version: "3.9"
 services:
