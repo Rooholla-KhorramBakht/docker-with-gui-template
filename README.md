@@ -1,5 +1,5 @@
 # Docker with GUI/GPU Support
-This is a devcontainer environment with graphics and GPU support. The GL Vendor-Neutral Dispatch Library (glvnd) is an abstraction layer that sends the openGL commands to the right driver and for proper graphics support, it should be installed withing the container. Specifically, the following packages must be present within the container. Additionally, NVIDIA container runtime needs a few environmental variable to be set. With all that, the `Dockerfile` looks like the following:
+This is a template devcontainer environment with graphics and GPU support. The GL Vendor-Neutral Dispatch Library (glvnd) is an abstraction layer that sends the openGL commands to the right driver and for proper graphics support, it should be installed withing the container. Specifically, the following packages must be present within the container. Additionally, NVIDIA container runtime needs a few environmental variable to be set. With all that, the `Dockerfile` looks like the following:
 
 ```docker
 FROM ubuntu:20.04 # Or any other image
